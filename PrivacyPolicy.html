@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+    <title>Privacy Policy · Motu Patlu Video</title>
+    <!-- Google Fonts: playful & modern -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Space+Grotesk:wght@400;500;600;700&family=Baloo+2:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <!-- Font Awesome 6 Free -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(145deg, #0a1a2e 0%, #14264a 25%, #1f3462 50%, #14264a 75%, #0a1a2e 100%);
+            /* deep cartoon-blue gradient — fun & vibrant */
+            font-family: 'Inter', 'Baloo 2', system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, sans-serif;
+            color: #f0f4f8;
+            padding: 2rem 1.5rem;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        /* floating cartoon & video icons */
+        body::before {
+            content: "🎬🎞️🍿😂🤪🎉🎬🎞️🍿😂🤪🎉";
+            position: fixed;
+            bottom: 10px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            font-size: 32px;
+            opacity: 0.08;
+            pointer-events: none;
+            white-space: nowrap;
+            z-index: 0;
+            letter-spacing: 14px;
+        }
+
+        .container {
+            max-width: 1300px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Hero section with icon and gradient */
+        .hero {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2.8rem 1.8rem;
+            background: rgba(255, 255, 255, 0.06);
+            backdrop-filter: blur(18px);
+            border-radius: 72px;
+            box-shadow: 0 28px 45px -14px rgba(0, 0, 0, 0.6), inset 0 1px 1px rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+        }
+        .app-icon {
+            width: 130px;
+            height: 130px;
+            margin: 0 auto 20px;
+            background: linear-gradient(135deg, #ffb703, #fb8500, #e63946);
+            border-radius: 42px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 20px 30px -8px rgba(251, 133, 0, 0.4);
+            transition: transform 0.2s;
+        }
+        .app-icon img {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+            filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
+            border-radius: 24px;
+        }
+        .app-icon:hover {
+            transform: scale(1.02);
+        }
+        .hero h1 {
+            font-family: 'Baloo 2', 'Inter', cursive;
+            font-size: 2.6rem;
+            font-weight: 800;
+            background: linear-gradient(120deg, #ffb703, #fb8500, #e63946, #ffb703);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            letter-spacing: -0.3px;
+            background-size: 300% 300%;
+            animation: shimmer 4s ease-in-out infinite;
+        }
+        @keyframes shimmer {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .app-badge {
+            display: inline-block;
+            background: rgba(255, 183, 3, 0.12);
+            backdrop-filter: blur(6px);
+            padding: 7px 26px;
+            border-radius: 60px;
+            font-weight: 600;
+            color: #ffb703;
+            font-size: 0.85rem;
+            margin-top: 12px;
+            border: 1px solid rgba(255, 183, 3, 0.2);
+        }
+        .dev-info {
+            margin-top: 18px;
+            font-weight: 500;
+            color: #b8c8d8;
+        }
+        .dev-info a {
+            color: #ffb703;
+            text-decoration: none;
+            border-bottom: 2px dotted rgba(255, 183, 3, 0.3);
+        }
+        .effective-badge {
+            background: rgba(255, 255, 255, 0.06);
+            backdrop-filter: blur(4px);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 0.4rem 1.6rem;
+            border-radius: 60px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: #ffb703;
+            margin-top: 18px;
+            border: 1px solid rgba(255, 183, 3, 0.15);
+        }
+
+        /* 2-column layout */
+        .policy-wrapper {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        .policy-content {
+            flex: 3;
+            min-width: 260px;
+        }
+        .toc-column {
+            flex: 1;
+            min-width: 260px;
+            position: sticky;
+            top: 2rem;
+            align-self: start;
+        }
+
+        /* cartoon card style */
+        .cartoon-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(12px);
+            border-radius: 48px;
+            padding: 1.6rem 2rem;
+            margin-bottom: 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            box-shadow: 0 12px 28px -10px rgba(0, 0, 0, 0.3);
+            transition: all 0.25s;
+        }
+        .cartoon-card:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(255, 183, 3, 0.18);
+            transform: translateY(-2px);
+        }
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-bottom: 1.2rem;
+        }
+        .card-header i {
+            font-size: 2rem;
+            background: linear-gradient(145deg, #ffb703, #fb8500, #e63946);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+        h2 {
+            font-family: 'Baloo 2', 'Inter', cursive;
+            font-size: 1.7rem;
+            font-weight: 700;
+            background: linear-gradient(120deg, #ffb703, #fb8500);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            margin: 0;
+        }
+        h3 {
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: #ffb703;
+            margin: 0.8rem 0 0.5rem;
+            border-left: 5px solid #e63946;
+            padding-left: 14px;
+        }
+        p,
+        li {
+            color: #d0dce8;
+            line-height: 1.55;
+            font-weight: 400;
+        }
+        ul,
+        ol {
+            margin: 0.7rem 0 1rem 1.5rem;
+        }
+        li {
+            margin: 0.45rem 0;
+        }
+        .highlight-cartoon {
+            background: rgba(255, 183, 3, 0.08);
+            border-radius: 28px;
+            padding: 1rem 1.6rem;
+            margin: 1.2rem 0;
+            border-left: 7px solid #ffb703;
+        }
+        .feature-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(255, 183, 3, 0.1);
+            border-radius: 60px;
+            padding: 0.25rem 1.2rem;
+            font-size: 0.7rem;
+            font-weight: 700;
+            color: #ffb703;
+            border: 1px solid rgba(255, 183, 3, 0.15);
+        }
+
+        /* TOC */
+        .toc-cartoon {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(12px);
+            border-radius: 44px;
+            padding: 1.6rem 1.2rem;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            box-shadow: 0 15px 28px -12px rgba(0, 0, 0, 0.3);
+            position: sticky;
+            top: 30px;
+        }
+        .toc-cartoon h4 {
+            font-family: 'Baloo 2', 'Inter', cursive;
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #ffb703;
+            border-bottom: 2px dashed rgba(255, 183, 3, 0.2);
+            padding-bottom: 0.6rem;
+            margin-bottom: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .toc-list {
+            list-style: none;
+            padding: 0;
+        }
+        .toc-list li {
+            margin: 0.85rem 0;
+        }
+        .toc-list a {
+            text-decoration: none;
+            font-weight: 600;
+            color: #b8c8d8;
+            transition: 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.9rem;
+        }
+        .toc-list a i {
+            font-size: 0.8rem;
+            color: #ffb703;
+        }
+        .toc-list a:hover {
+            color: #ffb703;
+            transform: translateX(6px);
+        }
+
+        .btn-cartoon {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: linear-gradient(95deg, #ffb703, #fb8500, #e63946);
+            padding: 8px 26px;
+            border-radius: 60px;
+            font-weight: 700;
+            color: #0a1a2e;
+            text-decoration: none;
+            box-shadow: 0 5px 14px rgba(251, 133, 0, 0.3);
+            transition: all 0.2s;
+        }
+        .btn-cartoon:hover {
+            transform: scale(0.96);
+            background: linear-gradient(95deg, #e6a503, #e67700, #d4303c);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.04);
+            backdrop-filter: blur(10px);
+            border-radius: 48px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: #90a0b0;
+            border: 1px solid rgba(255, 255, 255, 0.04);
+        }
+
+        @media (max-width: 860px) {
+            .policy-wrapper {
+                flex-direction: column;
+            }
+            .toc-column {
+                position: static;
+                width: 100%;
+            }
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            .app-icon {
+                width: 100px;
+                height: 100px;
+            }
+            .app-icon img {
+                width: 76px;
+                height: 76px;
+            }
+            .cartoon-card {
+                padding: 1.2rem;
+            }
+        }
+        .tiny-cartoon {
+            font-size: 0.7rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Hero: centered icon and title -->
+        <div class="hero">
+            <div class="app-icon">
+                <img src="https://raw.githubusercontent.com/nadeemgamingstudio/MotuPatlu/refs/heads/main/Icon.png" alt="Motu Patlu Video Icon" onerror="this.src='https://placehold.co/130x130?text=😂'" />
+            </div>
+            <h1>😂 Motu Patlu Video 🎬</h1>
+            <div class="app-badge">
+                <i class="fas fa-film"></i> Funny Cartoons · Motu Patlu Videos · Endless Laughter
+            </div>
+            <div class="dev-info">
+                <i class="fas fa-star"></i> Curated by <strong>Nadeem Gaming Studio</strong> &nbsp;|&nbsp; 📧 <a href="mailto:nadeemgamer180@gmail.com">nadeemgamer180@gmail.com</a>
+            </div>
+            <div class="effective-badge">
+                <i class="far fa-calendar-alt"></i> Privacy policy effective: <span id="effectiveDate"></span>
+            </div>
+        </div>
+
+        <div class="policy-wrapper">
+            <!-- main content sections -->
+            <div class="policy-content">
+
+                <!-- intro -->
+                <div class="cartoon-card" id="overview">
+                    <div class="card-header">
+                        <i class="fas fa-shield-alt"></i>
+                        <h2>🎉 Privacy overview</h2>
+                    </div>
+                    <p><strong>Motu Patlu Video</strong> brings you non-stop laughter with the funniest Motu Patlu cartoon videos, episodes, and compilations — all in one place! Whether you love Motu's crazy ideas or Patlu's smart comebacks, we've got your daily dose of entertainment. We respect your privacy as much as we love a good joke. This policy explains what information we collect, why, and how you stay in full control — because your privacy should never be a laughing matter.</p>
+                    <div class="highlight-cartoon">
+                        <i class="fas fa-smile-beam"></i> <strong>Our commitment:</strong> No selling of personal data, minimal permissions, full compliance with COPPA/GDPR-K/CCPA. We're here for the laughs, not for your data.
+                    </div>
+                </div>
+
+                <!-- 1. Data collection -->
+                <div class="cartoon-card" id="datacollect">
+                    <div class="card-header">
+                        <i class="fas fa-database"></i>
+                        <h2>📊 1. What data we collect</h2>
+                    </div>
+                    <p>Motu Patlu Video is built to be lightweight and privacy-focused. We only collect anonymous, non‑identifiable information to improve the app and show optional ads:</p>
+                    <ul>
+                        <li><strong>📱 Device &amp; technical info</strong> — model, OS version, language, country, advertising identifier (AAID / IDFA), IP address (anonymized). Used for analytics &amp; ads.</li>
+                        <li><strong>🎮 App preferences &amp; history</strong> — favorite videos, recently watched, saved playlists, sound settings. Stored locally on your device.</li>
+                        <li><strong>📢 Ad interaction data</strong> — via Google AdMob. AdMob may use identifiers to serve contextual or non-personalized ads. No personal data is shared.</li>
+                        <li><strong>💎 In-app purchases</strong> — if you buy premium features or remove ads, Google Play Billing processes the transaction. We never see your payment details.</li>
+                    </ul>
+                    <p><i class="fas fa-microchip"></i> We never access your contacts, media gallery, location, or any personal files. Pure cartoon fun!</p>
+                </div>
+
+                <!-- 2. How we use data -->
+                <div class="cartoon-card" id="howuse">
+                    <div class="card-header">
+                        <i class="fas fa-magic"></i>
+                        <h2>⚙️ 2. How we use your data</h2>
+                    </div>
+                    <p>Your information helps us deliver the most entertaining and smooth cartoon experience:</p>
+                    <ul>
+                        <li><i class="fas fa-save"></i> <strong>Save preferences &amp; watch history</strong> — remember your favorite Motu Patlu videos and playlists.</li>
+                        <li><i class="fas fa-chart-line"></i> <strong>Analyze &amp; improve performance</strong> — using Firebase Analytics &amp; Crashlytics to fix bugs and enhance user experience.</li>
+                        <li><i class="fas fa-ad"></i> <strong>Show non-intrusive ads</strong> (optional banners and interstitials) to keep the app free.</li>
+                        <li><i class="fas fa-cart-shopping"></i> <strong>Verify in-app purchases</strong> and grant premium features.</li>
+                    </ul>
+                    <div class="highlight-cartoon">
+                        <i class="fas fa-ban"></i> We do not sell, rent, or share your personal information with third parties for their own marketing.
+                    </div>
+                </div>
+
+                <!-- 3. Third-party services -->
+                <div class="cartoon-card" id="thirdparty">
+                    <div class="card-header">
+                        <i class="fas fa-handshake"></i>
+                        <h2>🔌 3. Third‑party services (SDKs)</h2>
+                    </div>
+                    <p>To deliver core features, we integrate with trusted partners:</p>
+                    <ul>
+                        <li><strong>Google AdMob</strong> – advertising. May collect device data and IP for ad relevance. <a href="https://policies.google.com/privacy" target="_blank" style="color:#ffb703;">Google Privacy Policy</a>.</li>
+                        <li><strong>Firebase Analytics &amp; Crashlytics</strong> – anonymized crash reports and usage metrics. Helps us keep Motu Patlu Video smooth and reliable.</li>
+                        <li><strong>Google Play Billing</strong> – secure handling of in-app purchases. We never see payment details.</li>
+                    </ul>
+                    <p>All third parties comply with GDPR, CCPA, COPPA, and other applicable privacy frameworks.</p>
+                </div>
+
+                <!-- 4. Data retention & deletion -->
+                <div class="cartoon-card" id="dataretention">
+                    <div class="card-header">
+                        <i class="fas fa-trash-alt"></i>
+                        <h2>🗑️ 4. Data retention &amp; deletion</h2>
+                    </div>
+                    <p>Your watch history and preferences remain on your device. Uninstalling Motu Patlu Video removes all local data. No server-side account exists. To request deletion of any analytics data linked to your advertising ID, email us at <a href="mailto:nadeemgamer180@gmail.com" style="color:#ffb703;">nadeemgamer180@gmail.com</a>. We'll respond within 30 days.</p>
+                    <p>You can reset your advertising ID anytime: <strong>Android Settings → Google → Ads → Reset advertising ID</strong>.</p>
+                </div>
+
+                <!-- 5. Ad choices & opt-out -->
+                <div class="cartoon-card" id="adchoices">
+                    <div class="card-header">
+                        <i class="fas fa-ad"></i>
+                        <h2>🎯 5. Your ad choices</h2>
+                    </div>
+                    <p>We respect your advertising preferences:</p>
+                    <ul>
+                        <li>On Android: <strong>Settings → Google → Ads → Opt out of Ads Personalization</strong>.</li>
+                        <li>You may also purchase the “Remove Ads” feature (one‑time IAP) to enjoy a distraction‑free cartoon experience.</li>
+                        <li>For users under the age of consent, only non‑personalized contextual ads are shown.</li>
+                    </ul>
+                    <div class="feature-pill"><i class="fas fa-child"></i> Child‑safe compliance (COPPA / GDPR‑K) enabled</div>
+                </div>
+
+                <!-- 6. Children's privacy -->
+                <div class="cartoon-card" id="children">
+                    <div class="card-header">
+                        <i class="fas fa-child"></i>
+                        <h2>🧸 6. Children's privacy (COPPA / GDPR‑K)</h2>
+                    </div>
+                    <p><strong>Motu Patlu Video</strong> is designed for family audiences and does not knowingly collect personal information from children under 13 (or under 16 in the EEA).</p>
+                    <ul>
+                        <li>No personal data (name, email, contact) is required to watch cartoons.</li>
+                        <li>If the Play Store identifies a child account, personalized ads are automatically disabled.</li>
+                        <li>Parents: if you believe your child has provided any personal information (e.g., via customer support), contact us immediately and we will delete it.</li>
+                    </ul>
+                </div>
+
+                <!-- 7. Data security -->
+                <div class="cartoon-card" id="security">
+                    <div class="card-header">
+                        <i class="fas fa-lock"></i>
+                        <h2>🔒 7. Security measures</h2>
+                    </div>
+                    <p>We implement industry‑standard security: encrypted network connections (TLS), minimal data retention, and restricted internal access. While no system is 100% invulnerable, we continuously update our practices to protect your information.</p>
+                </div>
+
+                <!-- 8. Your privacy rights -->
+                <div class="cartoon-card" id="rights">
+                    <div class="card-header">
+                        <i class="fas fa-user-check"></i>
+                        <h2>📜 8. Your privacy rights</h2>
+                    </div>
+                    <p>Depending on your location (EEA, UK, California, Brazil, India), you may have the right to:</p>
+                    <ul>
+                        <li>Access any personal data we might hold (linked to advertising ID).</li>
+                        <li>Request correction or deletion of such data.</li>
+                        <li>Opt out of “sale” of personal data (we never sell).</li>
+                        <li>Withdraw consent for analytics by resetting your advertising ID.</li>
+                    </ul>
+                    <p>To exercise any right, email <strong>nadeemgamer180@gmail.com</strong> with subject “Privacy Request – Motu Patlu Video”. We will respond promptly.</p>
+                </div>
+
+                <!-- 9. Changes to policy -->
+                <div class="cartoon-card" id="updates">
+                    <div class="card-header">
+                        <i class="fas fa-sync-alt"></i>
+                        <h2>🔄 9. Changes to this Privacy Policy</h2>
+                    </div>
+                    <p>We may update this policy from time to time. If changes are significant, we will notify you via an in‑app notice or update the effective date above. Continued use of Motu Patlu Video after changes means you accept the revised policy.</p>
+                </div>
+
+                <!-- 10. Contact -->
+                <div class="cartoon-card" id="contact">
+                    <div class="card-header">
+                        <i class="fas fa-envelope-open-text"></i>
+                        <h2>📧 10. Contact us</h2>
+                    </div>
+                    <p>Questions, cartoon suggestions, or privacy concerns? We're always ready for a fun conversation!</p>
+                    <div style="background: rgba(255, 255, 255, 0.05); border-radius: 36px; padding: 1rem 1.5rem;">
+                        <p><i class="fas fa-crown"></i> <strong>Nadeem Gaming Studio</strong><br />
+                            📧 <a href="mailto:nadeemgamer180@gmail.com" style="font-weight: 700; color: #ffb703;">nadeemgamer180@gmail.com</a><br />
+                            😂 <strong>Motu Patlu Video — laugh, enjoy, stay private</strong></p>
+                        <a href="mailto:nadeemgamer180@gmail.com?subject=Privacy%20Inquiry%20Motu%20Patlu%20Video" class="btn-cartoon"><i class="fas fa-envelope"></i> Send Privacy Request</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sticky TOC aside -->
+            <aside class="toc-column">
+                <div class="toc-cartoon">
+                    <h4><i class="fas fa-ticket"></i> Cartoon Menu</h4>
+                    <ul class="toc-list">
+                        <li><a href="#overview"><i class="fas fa-circle-info"></i> Overview</a></li>
+                        <li><a href="#datacollect"><i class="fas fa-database"></i> Data we collect</a></li>
+                        <li><a href="#howuse"><i class="fas fa-magic"></i> How we use data</a></li>
+                        <li><a href="#thirdparty"><i class="fas fa-handshake"></i> Third parties</a></li>
+                        <li><a href="#dataretention"><i class="fas fa-trash-alt"></i> Retention &amp; deletion</a></li>
+                        <li><a href="#adchoices"><i class="fas fa-ad"></i> Ad choices</a></li>
+                        <li><a href="#children"><i class="fas fa-child"></i> Children's privacy</a></li>
+                        <li><a href="#security"><i class="fas fa-lock"></i> Security</a></li>
+                        <li><a href="#rights"><i class="fas fa-user-check"></i> Your rights</a></li>
+                        <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                    </ul>
+                    <hr style="margin: 1.5rem 0; border-color: rgba(255, 183, 3, 0.12);" />
+                    <div class="tiny-cartoon" style="text-align: center">
+                        <i class="fas fa-star"></i> laugh · watch · repeat
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+        <footer>
+            <p>© <span id="year"></span> Nadeem Gaming Studio — Motu Patlu Video. All rights reserved. <br />
+                <i class="fas fa-popcorn"></i> Where cartoons meet privacy. <a href="mailto:nadeemgamer180@gmail.com" style="color:#ffb703;">Support</a></p>
+        </footer>
+    </div>
+
+    <script>
+        // set effective date & copyright year
+        const today = new Date();
+        const dateOptions = { year: 'numeric', month: 'long', day: 'numeric' };
+        document.getElementById('effectiveDate').textContent = today.toLocaleDateString(undefined, dateOptions);
+        document.getElementById('year').textContent = today.getFullYear();
+
+        // smooth scroll for anchor links
+        document.querySelectorAll('.toc-list a, .btn-cartoon').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                if (href && href.startsWith('#')) {
+                    e.preventDefault();
+                    const targetId = href.substring(1);
+                    const targetElement = document.getElementById(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
